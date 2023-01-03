@@ -21,20 +21,35 @@
     width="300"
     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_M6SzMy82SMHPAcWvpDIZoTiPKYXvhxnswA&usqp=CAU">
     <p style="font-size: xx-large;"><strong>Inter your tasks &#x1F4CB; &#x1F4CB; &#x1F4CB;</strong></p>
-    <form>
-        <label for="tasks">The task</label>
-        <br>
-        <input type="text" id="task" name="tasks"  >
-    </form>
+   
+    <input type="placeholder="Enter your task" id=task_field">
+    <input type="submit" value="Add Task" onclink =addToList()"
     <ol>
-      <li>watch classroom content<input type="checkbox"></li>
+      <li>study programming<input type="checkbox"></li>
       <ul>
         <li>Python<input type="checkbox"></li>
         <li>HTML<input type="checkbox"></li>
-      </ul>k
-      <li>Attend Connect Sessions<input type="checbox"></li>
-      <li>Attend Physical Sessions<input type="checkbox"></li>
+      </ul>
+      <li>listen English<input type="checkbox"></li>
+      <li>read book<input type="checkbox"></li>
     </ol>
   </div>
+  <script>
+     function addToList() {
+      let newItem = document.get("li");
+      if (newTask.value == ""){
+        alert("Please enter a taske");
+        return nu11;
+     }
+     let list = document.getElementById("todo_list");
+     let newiten = document.createllement("li");
+     let checkbox= document.createElement('input');
+     checkbox.type="checkbox"; 
+     newItem.appendChild(document.createTextNode(newTask.value));
+     newItem.appendChild(checkbox);
+     list.appendChild(newItem);
+     newTask.value="";
+    }
+  </script>
 </body>
 </html>
